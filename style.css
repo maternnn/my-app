@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ffe4e9, #ffadc4, #ff7a9d, #d64d70, #4b1f2c);
+    color: #ffe4e9;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #d64d70;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #ffe4e9;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #ffe4e9;
+    margin-bottom: 20px;
+}
+
+/* Стили для кнопок */
+button {
+    display: inline-block;
+    background: #ff7a9d;
+    color: #ffe4e9;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #d64d70;
+}
+
+/* Стили для секции обновления постов */
+#update-post-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+#update-post-section input,
+#update-post-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d64d70;
+    border-radius: 5px;
+    background: #ffe4e9;
+    color: #4b1f2c;
+    font-size: 16px;
+}
+
+#update-post-section textarea {
+    height: 80px;
+}
+
+#update-post-section .button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Стили для секции создания постов */
+#posts-section input,
+#create-post-section input,
+#create-post-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d64d70;
+    border-radius: 5px;
+    background: #ffe4e9;
+    color: #4b1f2c;
+    font-size: 16px;
+}
+
+textarea {
+    height: 80px;
+}
+
+#posts-container {
+    margin-top: 20px;
+}
+
+.post {
+    background: #ffadc4;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    color: #4b1f2c;
+}

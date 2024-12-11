@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Integration</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Подключение API</h1>
+
+        <section id="create-post-section">
+            <h2>Создать новый пост</h2>
+            <input type="text" id="post-title" placeholder="Введите заголовок" />
+            <textarea id="post-body" placeholder="Введите текст"></textarea>
+            <button id="create-post-btn">Отправить</button>
+        </section>
+
+        <section id="update-post-section">
+            <h2>Обновить пост</h2>
+            <input type="number" id="update-post-id" placeholder="ID поста (для обновления)" />
+            <input type="text" id="update-post-title" placeholder="Новый заголовок" />
+            <textarea id="update-post-body" placeholder="Новый текст"></textarea>
+            <div class="button-container">
+                <button id="update-post-btn">Обновить пост (PUT)</button>
+                <button id="patch-post-btn">Обновить только заголовок (PATCH)</button>
+            </div>
+        </section>
+        
+
+        <section id="posts-section">
+            <h2>Список постов</h2>
+            <input type="number" id="post-count" placeholder="Количество постов (1-100)" />
+            <button id="get-new-posts-btn">Получить новые посты</button>
+            <div id="posts-container"></div>
+        </section>
+    </div>
+</body>
+</html>
